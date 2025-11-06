@@ -1,9 +1,13 @@
-# Change Log
+# История изменений
 
-All notable changes to the "telegram-snippet" extension will be documented in this file.
+## 2025-11-07
+- Полное документирование кода
+- Хеш: `c193eb8`
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## 2025-11-07
+- Добавлена документация проекта
+- Хеш: `e7d2213`
 
-## [Unreleased]
-
-- Initial release
+## 2025-11-06
+- Базовая версия плагина
+- Хеш: `6d36a64`
