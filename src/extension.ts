@@ -3,8 +3,28 @@ import * as path from 'path';
 import * as os from 'os';
 import { exec } from 'child_process';
 
+/**
+ Активирует расширение при загрузке в VS Code
+ 
+ Параметры:
+ context (vscode.ExtensionContext) - контекст расширения VS Code
+ 
+ Возвращаемое значение:
+ void
+ */
 export function activate(context: vscode.ExtensionContext) {
-    
+    /**
+     Сохраняет выделенный текст в файл и открывает Telegram для отправки
+     
+	 Пример вызова:
+     // Выделение кода в редакторе + сочетание клавиш Ctrl+Shift+T
+
+     Логика работы:
+     1. Проверяет наличие активного редактора и выделенного текста
+     2. Сохраняет текст в файл snippet.cpp в папке Загрузки
+     3. Запускает Telegram Desktop
+     4. Показывает уведомление о результате
+     */
     let disposable = vscode.commands.registerCommand('telegram-snippet.saveSnippet', async () => {
         const editor = vscode.window.activeTextEditor;
         
@@ -51,4 +71,10 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(disposable);
 }
 
+/**
+ * Деактивирует расширение при выгрузке из VS Code
+ * 
+ * Возвращаемое значение:
+ * void
+ */
 export function deactivate() {}
