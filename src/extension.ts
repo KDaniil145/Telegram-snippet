@@ -77,6 +77,9 @@ export function activate(context: vscode.ExtensionContext) {
 /**
  Деактивирует расширение при выгрузке из VS Code
  
+ Параметры:
+ Нет параметров на входе
+
  Возвращаемое значение:
  void
  */
