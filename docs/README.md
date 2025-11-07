@@ -11,7 +11,7 @@
 ### Обязательные:
 - Windows
 - Visual Studio Code
-- Telegram Desktop (установленный в стандартную папку)
+- Telegram Desktop
 
 ### Путь к Telegram:
 `C:\Users<Username>\AppData\Roaming\Telegram Desktop\Telegram.exe`
