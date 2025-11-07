@@ -72,9 +72,9 @@ export function activate(context: vscode.ExtensionContext) {
 }
 
 /**
- * Деактивирует расширение при выгрузке из VS Code
- * 
- * Возвращаемое значение:
- * void
+ Деактивирует расширение при выгрузке из VS Code
+ 
+ Возвращаемое значение:
+ void
  */
 export function deactivate() {}
